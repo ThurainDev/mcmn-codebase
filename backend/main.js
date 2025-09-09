@@ -56,11 +56,6 @@ app.use('/api', apiLimiter);
 require("dotenv").config();
 const PORT = process.env.PORT || 4000;
 
-// morgan
-const morgan = require("morgan");
-app.use(express.json());
-app.use(morgan("dev"));
-
 // routes
 const recipientDatasRoutes = require("./routes/recipientDatas");
 const pagesRoutes = require("./routes/pages");
